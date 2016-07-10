@@ -1,5 +1,7 @@
 html, body, .wrapper {
-  background-color: #000000;
+  background-color: #000000; }
+
+.wrapper {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -19,29 +21,21 @@ html, body, .wrapper {
   margin-top: -175px;
   margin-left: -197px; }
 
-button {
-  font-family: "Russo One", sans-serif; }
-
 .trailer1 {
-  /*position:absolute;
-    top:50%;
-    left:45%;*/
   display: inline-block;
   margin: 10px; }
 
 .trailer2 {
-  /*position:absolute;
-    top:50%;
-    left:30%;*/
   display: inline-block;
   margin: 10px; }
 
 .trailer3 {
-  /*position:absolute;
-    top:50%;
-    left:60%;*/
   display: inline-block;
   margin: 10px; }
+
+/*Buttons*/
+button {
+  font-family: "Russo One", sans-serif; }
 
 .buttonArray {
   position: absolute;
@@ -52,15 +46,15 @@ button {
 
 .btn {
   background-color: #e22e13;
-  font-size: 1.25em;
-  color: #fff; }
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.1em; }
 
 .btn:hover {
   background-color: #b42e13; }
 
 a {
   color: #fff;
-  letter-spacing: 2px;
   text-decoration: none; }
 
 a:hover {
@@ -77,5 +71,27 @@ a:visited {
   color: #fff;
   letter-spacing: 2px;
   text-decoration: none; }
+
+/*Modal*/
+.modal {
+  text-align: center !important;
+  padding: 0 !important; }
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; }
+
+.modal-dialog {
+  display: inline-block;
+  vertical-align: middle; }
+
+.modal-content {
+  border: 0; }
+
+.modal-body {
+  background-color: #444444; }
 
 /*# sourceMappingURL=styles.css.map */

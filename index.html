@@ -10,17 +10,35 @@
 
 <script src="scripts/jquery-2.2.4.min.js"></script>
 <script src="styles/bootstrap/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <div>
+    <div class="wrapper">
     <img class="centerLogo" src="images/Tekken_Tag_Tournament_2_logo.png">
     <span class="buttonArray">
-        <button class="btn btn-md trailer1">Official Trailer</button> 
-        <button class="btn btn-md trailer2"><a href="https://youtu.be/7_zqCOsI47o">E3 Trailer</a></button> <!--Official from Bandai Namco--> 
-        <button class="btn btn-md trailer3">Gameplay</button> 
+        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-md trailer1">Official Trailer</button> 
+        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-md trailer2">E3 Trailer</button><!--Official from Bandai Namco--> 
+        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-md trailer3">Gameplay</button> 
     </span>
+
+<!--MODALS-->
+        <!-- Modal E3 Trailer-->
+        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+         <!-- Modal content-->
+        <div class="modal-content">    
+            <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7_zqCOsI47o" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+        </div>
     </div>
+
+<script src="scripts/scripts.js"></script>
+<!--END MODALS-->
 </body>
 
 </html>
