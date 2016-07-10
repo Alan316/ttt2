@@ -1,9 +1,13 @@
 //Fonts
-
+$fontHeaders: 'Russo One', sans-serif;
 
 //Colors
 $black: #000000;
-$light-grey: #eee;
+$grey1: #eee;
+$grey2: #aaa;
+$red: rgb(226,46,19);
+$redDark: rgb(180,46,19);
+$white: #fff;
 
 html, body, .wrapper{
     background-color: $black;
@@ -27,6 +31,10 @@ html, body, .wrapper{
     height:295px;
     margin-top:-175px;
     margin-left: -197px;
+}
+
+button{
+   font-family: $fontHeaders;
 }
 
 .trailer1{
@@ -57,8 +65,40 @@ html, body, .wrapper{
     position:absolute;
     top:50%;
     left:50%;
-    width:100%;
-    height:100%;
     margin-top:100px;        
-    margin-left:-230px;
+    margin-left:-240px;
+}
+
+.btn{
+     background-color: $red;
+     font-size: 1.25em;
+     color: $white;
+}
+
+.btn:hover{
+    background-color: $redDark;
+}
+
+a {
+    color: $white;
+    letter-spacing:2px;
+    text-decoration:none;
+}
+
+a:hover{
+    color: $grey2;
+    letter-spacing:2px;
+    text-decoration:none; 
+}
+
+a:active{
+    color: $grey2;
+    letter-spacing:2px;
+    text-decoration:none; 
+}
+
+a:visited{
+    color: $white;
+    letter-spacing:2px;
+    text-decoration:none; 
 }
