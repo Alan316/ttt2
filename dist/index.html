@@ -5,6 +5,7 @@
 
 <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
+<link rel="stylesheet" type="text/css" href="styles/animate.css">
 
 <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
@@ -14,21 +15,41 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container-fluid"> 
+        <nav class="navbar">
+            <span class="navbar-left">
+                <img class="systemLogo animate fadeIn" src="images/Xbox360_Logo.png">
+                <img class="systemLogo" src="images/Xboxone_logo.png">
+                <img class="systemLogo" src="images/ps3-logo.svg.png">
+            </span>
+        </nav>
+   
+    <div class="parent">
+    <div class="section screen1">
     <img class="centerLogo" src="images/Tekken_Tag_Tournament_2_logo.png">
     <span class="buttonArray">
         <button type="button" data-toggle="modal" data-target="#Modal1" class="btn btn-md trailer1">OFFICIAL TRAILER</button><!--Official from Bandai Namco--> 
         <button type="button" data-toggle="modal" data-target="#Modal2" class="btn btn-md trailer2">E3 TRAILER</button><!--Official from Bandai Namco--> 
         <button type="button" data-toggle="modal" data-target="#Modal3" class="btn btn-md trailer3">COMBOS</button><!--Official from Bandai Namco--> 
     </span>
+    </div>
+    
 
+    
+    <div class="section">
+        <p>TESTING< This shit</p>
+    </div>
+</div>
 <!--MODALS-->
         <!-- Official Trailer -->
         <div class="modal fade" id="Modal1" role="dialog">
         <div class="modal-dialog">
 
          <!-- Modal content -->
-        <div class="modal-content">    
+        <div class="modal-content">  
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>  
+            </div>
             <div class="modal-body">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/6aHLo7LI0gk" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -43,6 +64,9 @@
 
          <!-- Modal content-->
         <div class="modal-content">    
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>  
+            </div>
             <div class="modal-body">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/7_zqCOsI47o" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -57,13 +81,19 @@
 
          <!-- Modal content-->
         <div class="modal-content">    
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>  
+            </div>
             <div class="modal-body">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/REJ36l-pSIA?list=PLE065BBE4B2C73C02" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         </div>
         </div>
-    </div>
+
+
+</div>
+
 
 <script src="scripts/scripts.min.js"></script>
 <!--END MODALS-->

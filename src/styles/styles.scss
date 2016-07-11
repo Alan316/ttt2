@@ -10,7 +10,7 @@ $red: rgb(226,46,19);
 $redDark: rgb(180,46,19);
 $white: #ffffff;
 
-html, body, .wrapper{
+html, body{
     background-color: $black;
     /* Fix for Google fonts colored White*/
     -webkit-font-smoothing: antialiased;
@@ -18,19 +18,42 @@ html, body, .wrapper{
     -o-font-smoothing: antialiased;
     padding:0;
     margin:0;
+    height:100%;
+    width:100%;
 }
 
-.wrapper{
+.container-fluid{
+    padding:0;
+    margin:0;
+}
+
+.parent{
+    position:absolute;
     width:100%;
     height:100%;
     padding:0;
     margin:0;
     border:0;
 }
+.section{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    border:0;
+    position:relative;
+    top:-88px;
+}
 
-.wrapper td{
-    vertical-align:middle;
-    text-align:center;
+.screen1{
+      -webkit-animation: fadein 4s;
+     -moz-animation: fadein 4s;
+     -ms-animation: fadein 4s; 
+     -o-animation: fadein 4s; 
+     animation: fadein 4s;
+     background:url("../images/tekken_wallpapers.jpg") no-repeat center center;
+     background-attachment:cover;
+    
 }
 
 .centerLogo{
@@ -39,8 +62,14 @@ html, body, .wrapper{
     left:50%;
     width:400px;
     height:295px;
-    margin-top:-175px;
+    margin-top:-150px;
     margin-left: -197px;
+    -moz-filter: drop-shadow(5px 5px 9px $white);
+    -ms-filter: drop-shadow(5px 5px 9px $white);
+    -webkit-filter: drop-shadow(5px 5px 9px $white);
+    -webkit-filter: drop-shadow(5px 5px 9px $white);
+    filter: drop-shadow(5px 5px 9px $white);
+    
 }
 
 .trailer1{
@@ -67,9 +96,9 @@ button{
 .buttonArray{
     position:absolute;
     top:50%;
-    left:50%;
-    margin-top:100px;        
+    left:50%;       
     margin-left:-250px;
+    margin-top:80px;
 }
 
 .btn{
@@ -86,7 +115,7 @@ button:hover{
 
 btn:hover{
     color: $grey2;
-    letter-spacing:1px;
+    /*letter-spacing:1px;*/
     text-decoration:none; 
 }
 
@@ -101,11 +130,13 @@ btn:visited{
     letter-spacing:1px;
     text-decoration:none; 
 }
+/*Buttons End*/
 
 /*Modal*/
 .modal{
     text-align: center!important;
     padding: 0!important;
+    margin:0;
 }
 
 .modal:before {
@@ -123,9 +154,70 @@ btn:visited{
 
 .modal-content{
     border: 0;
+    width:680px;
+    background-color: transparent;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+    margin:0;
+    padding:0;
+}
+
+.modal-header{
+    width:680px;
+    color: $white;
+    border: 0;
+}
+
+.close{
+    color:$white;
+    font-size:1.5em;
+    opacity: 1;
+    margin-top:10px;
+}
+
+.modal-backdrop{
+     background-color:black;
+     opacity:0.7 !important;
 }
 
 .modal-body{
-    background-color: $grey12;
-    width:680px;
+    background-color: transparent;
+    box-shadow: 0;
 }
+/*Modal End*/
+
+/*Navbar*/
+
+.navbar {
+    padding:10px;
+    line-height:40px;
+    z-index:300;
+}
+.systemLogo{
+    width:100px;
+    margin-right:18px;
+}
+/*Navbar End*/
+
+
+
+@keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+
+        /* Firefox */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari and Chrome */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
