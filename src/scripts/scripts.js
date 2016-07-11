@@ -1,13 +1,13 @@
 $(document).ready(function(){
  $(".Trailer1").click(function(){
-     $('#myModal').modal('show');
+     $('#Modal1').modal('show');
  });
 
  $(".Trailer2").click(function(){
-     $('#myModal').modal('show');
+     $('#Modal2').modal('show');
  });
 
  $(".Trailer3").click(function(){
-     $('#myModal').modal('show');
+     $('#Modal3').modal('show');
  });
 });
