@@ -42,7 +42,6 @@ html, body{
     margin:0;
     border:0;
     position:relative;
-    top:-88px;
 }
 
 .screen1{
@@ -109,7 +108,7 @@ button{
     border-radius:0;
 }
 
-button:hover{
+.trailerButton:hover{
     background-color: $redDark;   
 }
 
@@ -191,14 +190,48 @@ btn:visited{
 /*Navbar*/
 
 .navbar {
-    padding:10px;
-    line-height:40px;
-    z-index:300;
+    padding:10px 30px 10px 30px;
+    min-height:0 !important;
+    z-index:400;
 }
 .systemLogo{
     width:100px;
     margin-right:18px;
 }
+
+
+.navbar>button
+{
+    float:right;
+}
+    .navbar-header
+        {
+            float: none;
+        }
+
+    .navbar-toggle
+        {
+            display: block;
+            margin:0;
+            padding:0;
+        }
+
+        .navbar-collapse.collapse
+        {
+            display: none !important;
+        }
+
+        .glyphicon-menu-hamburger{
+            font-size:1.5em;
+        }
+
+.navbarLink{
+    background-color:$redDark;
+    z-index:20;
+    padding:15px;
+    width:300px;
+}
+
 /*Navbar End*/
 
 
