@@ -10,6 +10,19 @@ $red: rgb(226,46,19);
 $redDark: rgb(180,46,19);
 $white: #ffffff;
 
+//Styles
+
+
+//Style Mixins
+@mixin animation($fadeIn) {
+     -webkit-animation: $fadeIn;
+     -moz-animation: $fadeIn;
+     -ms-animation: $fadeIn;
+     -o-animation: $fadeIn;
+     animation: $fadeIn;
+} 
+
+
 html, body{
     background-color: $black;
     /* Fix for Google fonts colored White*/
@@ -45,14 +58,9 @@ html, body{
 }
 
 .screen1{
-      -webkit-animation: fadein 3s;
-     -moz-animation: fadein 3s;
-     -ms-animation: fadein 3s; 
-     -o-animation: fadein 3s; 
-     animation: fadein 3s;
+     @include animation(fadein 3s);
      background:url("../images/tekken_wallpapers.jpg") no-repeat center center;
      background-attachment:cover;
-    
 }
 
 .centerLogo{
@@ -190,9 +198,9 @@ btn:visited{
 /*Navbar*/
 
 .navbar {
-    padding:10px 30px 10px 30px;
     min-height:0 !important;
     z-index:400;
+    line-height:50px;
 }
 .systemLogo{
     width:100px;
@@ -203,33 +211,50 @@ btn:visited{
 .navbar>button
 {
     float:right;
+    background-color: $grey12;
 }
-    .navbar-header
-        {
-            float: none;
-        }
 
-    .navbar-toggle
-        {
-            display: block;
-            margin:0;
-            padding:0;
-        }
+.navbar-header
+{
+    float: none;
+    background-color: rgba(40,40,40,.75);
+    padding:10px 30px 10px 30px;
+}
 
-        .navbar-collapse.collapse
-        {
-            display: none !important;
-        }
+.navbar-toggle
+{
+    display: block;
+	margin:0;
+    padding:0;
+}
 
-        .glyphicon-menu-hamburger{
-            font-size:1.5em;
-        }
+.navbar-collapse.collapse
+{
+    display: none !important;
+}
+
+ .hamburgerText, .glyphicon-menu-hamburger{
+    font-size:1.5em;
+    color:$white;
+}
 
 .navbarLink{
-    background-color:$redDark;
-    z-index:20;
-    padding:15px;
+    text-align:center;
+    background-color:$red;
+    z-index:30;
+    padding:5px;
     width:300px;
+    border: 1px solid $grey12;
+    color:$white;
+    font-family: $fontHeaders;
+    font-size:1.3em;
+    letter-spacing: 2px;
+}
+
+.navbarLink:hover, .navbarLink:active,
+{
+    color:$grey12; 
+    background-color:$redDark;
 }
 
 /*Navbar End*/

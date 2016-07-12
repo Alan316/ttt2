@@ -151,19 +151,22 @@ btn:visited {
 /*Modal End*/
 /*Navbar*/
 .navbar {
-  padding: 10px 30px 10px 30px;
   min-height: 0 !important;
-  z-index: 400; }
+  z-index: 400;
+  line-height: 50px; }
 
 .systemLogo {
   width: 100px;
   margin-right: 18px; }
 
 .navbar > button {
-  float: right; }
+  float: right;
+  background-color: #444444; }
 
 .navbar-header {
-  float: none; }
+  float: none;
+  background-color: rgba(40, 40, 40, 0.75);
+  padding: 10px 30px 10px 30px; }
 
 .navbar-toggle {
   display: block;
@@ -173,14 +176,25 @@ btn:visited {
 .navbar-collapse.collapse {
   display: none !important; }
 
-.glyphicon-menu-hamburger {
-  font-size: 1.5em; }
+.hamburgerText, .glyphicon-menu-hamburger {
+  font-size: 1.5em;
+  color: #ffffff; }
 
 .navbarLink {
-  background-color: #b42e13;
-  z-index: 20;
-  padding: 15px;
-  width: 300px; }
+  text-align: center;
+  background-color: #e22e13;
+  z-index: 30;
+  padding: 5px;
+  width: 300px;
+  border: 1px solid #444444;
+  color: #ffffff;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 2px; }
+
+.navbarLink:hover, .navbarLink:active {
+  color: #444444;
+  background-color: #b42e13; }
 
 /*Navbar End*/
 @keyframes fadein {
