@@ -3,7 +3,7 @@ $(document).ready(function(){
      $('#Modal1').modal('show');
  });
 
- $('#Modal1').on('hide.bs.modal', function(e) {    
+$('#Modal1').on('hide.bs.modal', function(e) {    
     var $if = $(e.delegateTarget).find('iframe');
     var src = $if.attr("src");
     $if.attr("src", '/empty.html');
