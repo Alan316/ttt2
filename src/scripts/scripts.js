@@ -36,3 +36,23 @@ $('#Modal1').on('hide.bs.modal', function(e) {
 
 });
 
+$(function() {
+
+  $(window).scroll(function() {
+    var x = $(window).scrollTop();
+
+
+    if (x >= 600) {
+      $(".navbarLogo").fadeIn();
+    } else {
+      $(".navbarLogo").fadeOut();
+    }
+
+  });
+
+});
+
+
+
+
+
