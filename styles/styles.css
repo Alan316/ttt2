@@ -57,7 +57,7 @@ html, body {
   width: 400px;
   height: 295px;
   margin-top: -150px;
-  margin-left: -197px;
+  margin-left: -200px;
   -moz-filter: drop-shadow(5px 5px 9px #ffffff);
   -ms-filter: drop-shadow(5px 5px 9px #ffffff);
   -webkit-filter: drop-shadow(5px 5px 9px #ffffff);
@@ -84,7 +84,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -250px;
+  margin-left: -247px;
   margin-top: 80px; }
 
 .btn {
@@ -222,7 +222,7 @@ btn:visited {
 /*Navbar End*/
 .news {
   top: 100px;
-  background-color: #222222;
+  background-color: rgba(34, 34, 34, 0.8);
   color: #ffffff; }
 
 @keyframes fadein {
