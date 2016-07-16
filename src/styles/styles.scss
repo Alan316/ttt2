@@ -8,6 +8,7 @@ $grey1: #eee;
 $grey2: #aaa;
 $grey12: #444444;
 $grey13: #222222;
+$grey13_8: rgba(34, 34, 34, .8);
 $red: rgb(226,46,19);
 $redDark: rgb(180,46,19);
 $white: #ffffff;
@@ -89,7 +90,7 @@ html, body{
     width:400px;
     height:295px;
     margin-top:-150px;
-    margin-left: -197px;
+    margin-left: -200px;
     -moz-filter: drop-shadow(5px 5px 9px $white);
     -ms-filter: drop-shadow(5px 5px 9px $white);
     -webkit-filter: drop-shadow(5px 5px 9px $white);
@@ -123,7 +124,7 @@ button{
     position:absolute;
     top:50%;
     left:50%;       
-    margin-left:-250px;
+    margin-left:-247px;
     margin-top:80px;
 }
 
@@ -292,7 +293,7 @@ btn:visited{
 
 .news{
    top:100px;
-   background-color:$grey13;
+   background-color:$grey13_8;
    color:$white;
 }
 
