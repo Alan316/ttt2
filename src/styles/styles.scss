@@ -1,11 +1,13 @@
 //Fonts
 $fontHeaders: 'Russo One', sans-serif;
+$fontBody: 'Lato', sans-serif;
 
 //Colors
 $black: #000000;
 $grey1: #eee;
 $grey2: #aaa;
 $grey12: #444444;
+$grey13: #222222;
 $red: rgb(226,46,19);
 $redDark: rgb(180,46,19);
 $white: #ffffff;
@@ -33,6 +35,7 @@ html, body{
     margin:0;
     height:100%;
     width:100%;
+    font-family: $fontBody;
 }
 
 .container-fluid{
@@ -201,7 +204,7 @@ btn:visited{
 }
 
 .modal-backdrop{
-     background-color:black;
+     background-color: $black;
      opacity:0.7 !important;
 }
 
@@ -287,7 +290,11 @@ btn:visited{
 
 /*Navbar End*/
 
-
+.news{
+   top:100px;
+   background-color:$grey13;
+   color:$white;
+}
 
 @keyframes fadein {
             from { opacity: 0; }
