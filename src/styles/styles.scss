@@ -39,14 +39,11 @@ html, body{
     font-family: $fontBody;
 }
 
-.container-fluid{
-    padding:0;
-    margin:0;
-}
+.container-fluid{ padding:0; margin:0;}
 
-.inlineBlock{
-    display:inline-block;
-}
+.container {padding:0; margin:0; }
+
+.inlineBlock{ display:inline-block;}
 
 .parent{
     position:absolute;
