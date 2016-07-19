@@ -14,10 +14,6 @@ html, body {
   padding: 0;
   margin: 0; }
 
-.container {
-  padding: 0;
-  margin: 0; }
-
 .inlineBlock {
   display: inline-block; }
 
@@ -202,19 +198,18 @@ btn:visited {
   font-size: 1.5em;
   color: #ffffff; }
 
-.navbarLink {
+.navbarLink, .nav > li > a, .nav > li > a:visited {
   text-align: center;
   background-color: #e22e13;
   z-index: 30;
-  padding: 5px;
   width: 300px;
   border: 1px solid #444444;
   color: #ffffff;
   font-family: "Russo One", sans-serif;
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 2px; }
 
-.navbarLink:hover, .navbarLink:active {
+.nav > li > a:hover, .nav > li > a:active {
   color: #444444;
   background-color: #b42e13; }
 
@@ -242,7 +237,7 @@ btn:visited {
   text-align: center; }
 
 .cosplayFeature {
-  width: 380px;
+  width: 100%;
   height: 300px;
   background-color: #000000;
   margin: 0;
@@ -259,10 +254,10 @@ btn:visited {
 .cosplayHeader {
   font-family: "Russo One", sans-serif;
   background-color: #e22e13;
-  width: 100%;
   font-size: 1.5em;
   letter-spacing: 2px;
-  padding: 5px 0 5px 0; }
+  padding: 5px 0 5px 0;
+  width: 100%; }
 
 @keyframes fadein {
   from {
