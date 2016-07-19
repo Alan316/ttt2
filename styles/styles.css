@@ -33,6 +33,14 @@ html, body {
   border: 0;
   position: relative; }
 
+.section2 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative; }
+
 .screen1 {
   -webkit-animation: fadein 3s;
   -moz-animation: fadein 3s;
@@ -64,6 +72,9 @@ html, body {
   -webkit-filter: drop-shadow(5px 5px 9px #ffffff);
   filter: drop-shadow(5px 5px 9px #ffffff); }
 
+iframe {
+  max-width: 100%; }
+
 .trailer1 {
   display: inline-block;
   margin: 10px; }
@@ -73,6 +84,10 @@ html, body {
   margin: 10px; }
 
 .trailer3 {
+  display: inline-block;
+  margin: 10px; }
+
+.trailerReview1 {
   display: inline-block;
   margin: 10px; }
 
@@ -90,7 +105,7 @@ button {
 .btn {
   background-color: #e22e13;
   color: #ffffff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 1.1em;
   border-radius: 0; }
 
@@ -123,16 +138,16 @@ btn:visited {
   content: '';
   display: inline-block;
   height: 100%;
-  vertical-align: middle;
-  margin-right: -80px; }
+  vertical-align: middle; }
 
 .modal-dialog {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding: 0px;
+  margin: 0px; }
 
 .modal-content {
   border: 0;
-  width: 680px;
   background-color: transparent;
   -webkit-box-shadow: 0 5px 15px transparent;
   -moz-box-shadow: 0 5px 15px transparent;
@@ -142,7 +157,6 @@ btn:visited {
   padding: 0; }
 
 .modal-header {
-  width: 680px;
   color: #ffffff;
   border: 0; }
 
@@ -158,7 +172,8 @@ btn:visited {
 
 .modal-body {
   background-color: transparent;
-  box-shadow: 0; }
+  box-shadow: 0;
+  padding: 0; }
 
 /*Modal End*/
 /*Navbar*/
@@ -206,8 +221,8 @@ btn:visited {
   border: 1px solid #444444;
   color: #ffffff;
   font-family: "Russo One", sans-serif;
-  font-size: 1em;
-  letter-spacing: 2px; }
+  font-size: 1.1em;
+  letter-spacing: 1px; }
 
 .nav > li > a:hover, .nav > li > a:active {
   color: #444444;
@@ -218,7 +233,8 @@ btn:visited {
   margin-right: 30px;
   display: none; }
 
-/*Navbar End*/
+/* Navbar End */
+/* News and Features */
 .spacer {
   padding: 30px; }
 
@@ -251,13 +267,25 @@ btn:visited {
   border-bottom: solid 3px #e22e13;
   border-right: solid 3px #e22e13; }
 
-.cosplayHeader {
+.cosplayHeader, .featureHeader {
   font-family: "Russo One", sans-serif;
   background-color: #e22e13;
   font-size: 1.5em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 5px 0 5px 0;
   width: 100%; }
+
+.reviewFeature {
+  width: 100%;
+  height: 350px;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px 0px 15px 15px;
+  text-align: center;
+  border-left: solid 3px #e22e13;
+  border-bottom: solid 3px #e22e13;
+  border-right: solid 3px #e22e13; }
 
 @keyframes fadein {
   from {
@@ -278,5 +306,21 @@ btn:visited {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@media (max-width: 710px) and (orientation: portrait) {
+  .embed-responsive .embed-responsive-item,
+  .embed-responsive iframe,
+  .embed-responsive embed,
+  .embed-responsive object,
+  .embed-responsive video {
+    position: replative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; }
+  .modal:before {
+    height: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */
