@@ -41,8 +41,6 @@ html, body{
 
 .container-fluid{ padding:0; margin:0;}
 
-.container {padding:0; margin:0; }
-
 .inlineBlock{ display:inline-block;}
 
 .parent{
@@ -261,20 +259,20 @@ btn:visited{
     color:$white;
 }
 
-.navbarLink{
+.navbarLink, .nav>li>a, .nav>li>a:visited{
     text-align:center;
     background-color:$red;
     z-index:30;
-    padding:5px;
     width:300px;
     border: 1px solid $grey12;
     color:$white;
     font-family: $fontHeaders;
-    font-size:1.3em;
+    font-size:1em;
     letter-spacing: 2px;
 }
 
-.navbarLink:hover, .navbarLink:active,
+
+.nav>li>a:hover , .nav>li>a:active,
 {
     color:$grey12; 
     background-color:$redDark;
@@ -309,7 +307,7 @@ btn:visited{
 }
 
 .cosplayFeature{
-    width:380px;
+    width:100%;
     height:300px;
     background-color:$black;
     margin:0;
@@ -326,10 +324,10 @@ btn:visited{
 .cosplayHeader{
     font-family: $fontHeaders;
     background-color:$red;
-    width:100%;
     font-size:1.5em;
     letter-spacing: 2px;
     padding: 5px 0 5px 0;
+    width:100%;
 }
 
 @keyframes fadein {
