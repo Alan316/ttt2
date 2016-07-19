@@ -35,6 +35,17 @@ $('#Modal1').on('hide.bs.modal', function(e) {
     $if.attr("src", src);
  });
 
+ $(".TrailerReview1").click(function(){
+     $('#ModalReview1').modal('show');
+ });
+
+$('#ModalReview1').on('hide.bs.modal', function(e) {    
+    var $if = $(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
+ });
+
 });
 
 /*Logo Fade In*/
@@ -52,7 +63,7 @@ $(function() {
 
   });
 
-
+/*Cosplay Image Randomizer*/
   (function(){
     var images = ['tekken_cosplay_1.jpg', 'tekken_cosplay_2.jpg', 'tekken_cosplay_3.jpg', 'tekken_cosplay_4.jpg', 'tekken_cosplay_5.jpg'];
     $('.cosplayFeature').css({'background-image': 'url(images/cosplay/' + images[Math.floor(Math.random() * images.length)] + ')'});

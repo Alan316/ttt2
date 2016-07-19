@@ -60,6 +60,15 @@ html, body{
     position:relative;
 }
 
+.section2{
+    width:100%;
+    height:auto;
+    padding:0;
+    margin:0;
+    border:0;
+    position:relative;
+}
+
 .screen1{
      @include animation(fadein 3s);
      background:url("../images/tekken_wallpapers.jpg") no-repeat center center;
@@ -94,6 +103,8 @@ html, body{
     
 }
 
+iframe{max-width:100%;}
+
 .trailer1{
     display:inline-block;
     margin:10px;
@@ -105,6 +116,11 @@ html, body{
 }
 
 .trailer3{
+    display:inline-block;
+    margin:10px;
+}
+
+.trailerReview1{
     display:inline-block;
     margin:10px;
 }
@@ -126,7 +142,7 @@ button{
 .btn{
     background-color: $red;
     color: $white;
-    letter-spacing:2px;
+    letter-spacing:1px;
     font-size: 1.1em;
     border-radius:0;
 }
@@ -166,17 +182,17 @@ btn:visited{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -80px;
 }
 
 .modal-dialog {
     display: inline-block;
     vertical-align: middle;
+    padding:0px;
+    margin:0px;
 }
 
 .modal-content{
     border: 0;
-    width:680px;
     background-color: transparent;
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
     -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
@@ -187,7 +203,6 @@ btn:visited{
 }
 
 .modal-header{
-    width:680px;
     color: $white;
     border: 0;
 }
@@ -207,6 +222,7 @@ btn:visited{
 .modal-body{
     background-color: transparent;
     box-shadow: 0;
+    padding:0;
 }
 /*Modal End*/
 
@@ -267,8 +283,8 @@ btn:visited{
     border: 1px solid $grey12;
     color:$white;
     font-family: $fontHeaders;
-    font-size:1em;
-    letter-spacing: 2px;
+    font-size:1.1em;
+    letter-spacing: 1px;
 }
 
 
@@ -284,8 +300,10 @@ btn:visited{
     display:none;
 }
 
-/*Navbar End*/
+/* Navbar End */
 
+
+/* News and Features */
 .spacer{
     padding:30px;
 }
@@ -321,13 +339,26 @@ btn:visited{
     border-right:solid 3px $red;
 }
 
-.cosplayHeader{
+.cosplayHeader, .featureHeader{
     font-family: $fontHeaders;
     background-color:$red;
     font-size:1.5em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 5px 0 5px 0;
     width:100%;
+}
+
+.reviewFeature {
+    width:100%;
+    height:350px;
+    background-color:$black;
+    margin:0;
+    padding:0;
+    border-radius: 0px 0px 15px 15px;
+    text-align:center;
+    border-left:solid 3px $red;
+    border-bottom:solid 3px $red;
+    border-right:solid 3px $red;
 }
 
 @keyframes fadein {
@@ -348,3 +379,26 @@ btn:visited{
             to   { opacity: 1; }
         }
 
+
+        
+
+@media (max-width: 710px) and (orientation: portrait){
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: replative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.modal:before {
+    height:10%;
+}
+
+}
