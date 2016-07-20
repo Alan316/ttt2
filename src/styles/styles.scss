@@ -14,7 +14,8 @@ $redDark: rgb(180,46,19);
 $white: #ffffff;
 
 //Styles
-
+$curvedBorderInner: 0px 0px 12px 12px;
+$curvedBorder: 0px 0px 15px 15px;
 
 //Style Mixins
 @mixin animation($fadeIn) {
@@ -43,6 +44,11 @@ html, body{
 
 .inlineBlock{ display:inline-block;}
 
+.noMargPad{
+    margin:0;
+    padding:0;
+}
+
 .parent{
     position:absolute;
     width:100%;
@@ -60,25 +66,16 @@ html, body{
     position:relative;
 }
 
-.section2{
-    width:100%;
-    height:auto;
-    padding:0;
-    margin:0;
-    border:0;
-    position:relative;
-}
-
 .screen1{
      @include animation(fadein 3s);
      background:url("../images/tekken_wallpapers.jpg") no-repeat center center;
-     background-attachment:ccover;
+     background-attachment:cover;
      
 }
 
 .screen2{
      background:url("../images/tekken-2-yoshimitsu.jpg") no-repeat center center;
-     background-attachment:cover;
+     background-attachment:cover !important;
 }
 
 .screen3{
@@ -330,7 +327,7 @@ btn:visited{
     background-color:$black;
     margin:0;
     padding:0;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: $curvedBorder;
     text-align:center;
     background-position:center;
     background-image: url("images/cosplay/tekken_cosplay_1.jpg"); /*Default if no Javascript*/
@@ -341,7 +338,7 @@ btn:visited{
 
 .cosplayHeader, .featureHeader{
     font-family: $fontHeaders;
-    background-color:$red;
+    background-color:$redDark;
     font-size:1.5em;
     letter-spacing: 1px;
     padding: 5px 0 5px 0;
@@ -350,15 +347,34 @@ btn:visited{
 
 .reviewFeature {
     width:100%;
-    height:350px;
     background-color:$black;
     margin:0;
     padding:0;
     border-radius: 0px 0px 15px 15px;
     text-align:center;
-    border-left:solid 3px $red;
-    border-bottom:solid 3px $red;
-    border-right:solid 3px $red;
+    border-left:solid 3px $redDark;
+    border-bottom:solid 3px $redDark;
+    border-right:solid 3px $redDark;
+}
+
+
+.reviewLink, .reviewLink>a .reviewLink:visited{
+    text-align:center;
+    background-color:$red;
+    z-index:30;
+    width:100%;
+    color:$white;
+    font-family: $fontHeaders;
+    font-size:1.1em;
+    letter-spacing: 1px;
+    border-top: 1px solid $grey12;
+}
+
+.reviewLink:hover, .reviewLink:active{
+    background-color:$redDark;
+}
+.curvedBottom {
+    border-radius: $curvedBorderInner;
 }
 
 @keyframes fadein {
@@ -383,22 +399,6 @@ btn:visited{
         
 
 @media (max-width: 710px) and (orientation: portrait){
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  position: replative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
 
-.modal:before {
-    height:10%;
-}
 
 }
