@@ -63,12 +63,23 @@ $(function() {
 
   });
 
+});
+
 /*Cosplay Image Randomizer*/
-  (function(){
+(function(){
     var images = ['tekken_cosplay_1.jpg', 'tekken_cosplay_2.jpg', 'tekken_cosplay_3.jpg', 'tekken_cosplay_4.jpg', 'tekken_cosplay_5.jpg'];
     $('.cosplayFeature').css({'background-image': 'url(images/cosplay/' + images[Math.floor(Math.random() * images.length)] + ')'});
   })();
 
 
-});
+$(function() {
+   $( "#upBtn" ).click(function(){
+    $('#scroll').scrollTop($('#scroll').scrollTop()-100);
+}); 
 
+
+ $( "#downBtn" ).click(function(){
+    $('#scroll').scrollTop($('#scroll').scrollTop()+100);
+});
+ 
+ });

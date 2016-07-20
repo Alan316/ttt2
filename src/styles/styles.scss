@@ -74,7 +74,7 @@ html, body{
 
 .screen2{
      background:url("../images/tekken_wallpaper2.jpg") no-repeat center center;
-     background-size:cover;  
+     background-size:cover;
 }
 
 .screen3{
@@ -306,9 +306,19 @@ btn:visited{
 
 .news{
    top:100px;
+   display:inline-block;
+}
+
+.newsScroll{
+    overflow:hidden;
+    height:550px;
+    border: 0;
+}
+
+.newsArticle{
    background-color:$grey13_8;
    color:$white;
-   display:inline-block;
+   border-radius: $curvedBorder;
 }
 
 .features{

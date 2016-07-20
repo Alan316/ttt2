@@ -236,9 +236,17 @@ btn:visited {
 
 .news {
   top: 100px;
+  display: inline-block; }
+
+.newsScroll {
+  overflow: hidden;
+  height: 550px;
+  border: 0; }
+
+.newsArticle {
   background-color: rgba(34, 34, 34, 0.8);
   color: #ffffff;
-  display: inline-block; }
+  border-radius: 0px 0px 15px 15px; }
 
 .features {
   top: 100px;
