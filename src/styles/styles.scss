@@ -16,6 +16,7 @@ $white: #ffffff;
 //Styles
 $curvedBorderInner: 0px 0px 12px 12px;
 $curvedBorder: 0px 0px 15px 15px;
+$borderDarkRed: solid 3px $redDark;
 
 //Style Mixins
 @mixin animation($fadeIn) {
@@ -241,6 +242,9 @@ btn:visited{
     display:inline-block;
 }
 
+.nav{
+    width:300px;
+}
 .navbar>button
 {
     float:right;
@@ -313,12 +317,55 @@ btn:visited{
     overflow:hidden;
     height:550px;
     border: 0;
+    border-left:$borderDarkRed;
+    border-right:$borderDarkRed;
+    border-bottom: $borderDarkRed;
+    border-radius: $curvedBorder;
+    margin:0;
+    padding:0;
 }
+
+.arrowblock {
+    float:right;
+    margin-top:20px;
+}
+
+.upArrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent $red transparent;
+    display:inline-block;
+    cursor:pointer;
+    margin:0 5px 0 5px;
+}
+
+.upArrow:hover{
+    border-color: transparent transparent $redDark transparent;
+}
+
+.downArrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 10px 0 10px;
+    border-color: $red  transparent transparent transparent;
+    display:inline-block;
+    cursor:pointer;
+    margin:0 5px 0 5px;
+}
+
+.downArrow:hover{
+      border-color: $redDark transparent transparent transparent;
+}
+
 
 .newsArticle{
    background-color:$grey13_8;
    color:$white;
-   border-radius: $curvedBorder;
+   padding:10px;
+   text-align:left;
 }
 
 .features{
@@ -340,9 +387,9 @@ btn:visited{
     text-align:center;
     background-position:center;
     background-image: url("images/cosplay/tekken_cosplay_1.jpg"); /*Default if no Javascript*/
-    border-left:solid 3px $red;
-    border-bottom:solid 3px $red;
-    border-right:solid 3px $red;
+    border-left: $borderDarkRed;
+    border-bottom:$borderDarkRed;
+    border-right:$borderDarkRed;
 }
 
 .cosplayHeader, .featureHeader{
@@ -361,9 +408,9 @@ btn:visited{
     padding:0;
     border-radius: 0px 0px 15px 15px;
     text-align:center;
-    border-left:solid 3px $redDark;
-    border-bottom:solid 3px $redDark;
-    border-right:solid 3px $redDark;
+    border-left:$borderDarkRed;
+    border-bottom:$borderDarkRed;
+    border-right:$borderDarkRed;
 }
 
 
@@ -407,7 +454,3 @@ btn:visited{
 
         
 
-@media (max-width: 710px) and (orientation: portrait){
-
-
-}

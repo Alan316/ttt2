@@ -1,0 +1,23 @@
+@media (max-width: 1200px){
+.features{
+    margin-top:40px;
+}
+.screen2{
+    text-align:center;
+  }
+}
+.spacer{
+    padding:10px;
+}
+
+
+@media (max-width: 500px){
+.systemLogo, .ps3{
+    display:none;
+  }
+.navbarLogo{
+    display:inline-block;
+    float:left;
+    width:200px;
+}
+}

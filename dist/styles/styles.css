@@ -188,6 +188,9 @@ btn:visited {
   margin-right: 18px;
   display: inline-block; }
 
+.nav {
+  width: 300px; }
+
 .navbar > button {
   float: right;
   background-color: #444444; }
@@ -241,12 +244,49 @@ btn:visited {
 .newsScroll {
   overflow: hidden;
   height: 550px;
-  border: 0; }
+  border: 0;
+  border-left: solid 3px #b42e13;
+  border-right: solid 3px #b42e13;
+  border-bottom: solid 3px #b42e13;
+  border-radius: 0px 0px 15px 15px;
+  margin: 0;
+  padding: 0; }
+
+.arrowblock {
+  float: right;
+  margin-top: 20px; }
+
+.upArrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 20px 10px;
+  border-color: transparent transparent #e22e13 transparent;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 5px 0 5px; }
+
+.upArrow:hover {
+  border-color: transparent transparent #b42e13 transparent; }
+
+.downArrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 10px 0 10px;
+  border-color: #e22e13 transparent transparent transparent;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 5px 0 5px; }
+
+.downArrow:hover {
+  border-color: #b42e13 transparent transparent transparent; }
 
 .newsArticle {
   background-color: rgba(34, 34, 34, 0.8);
   color: #ffffff;
-  border-radius: 0px 0px 15px 15px; }
+  padding: 10px;
+  text-align: left; }
 
 .features {
   top: 100px;
@@ -267,9 +307,9 @@ btn:visited {
   background-position: center;
   background-image: url("images/cosplay/tekken_cosplay_1.jpg");
   /*Default if no Javascript*/
-  border-left: solid 3px #e22e13;
-  border-bottom: solid 3px #e22e13;
-  border-right: solid 3px #e22e13; }
+  border-left: solid 3px #b42e13;
+  border-bottom: solid 3px #b42e13;
+  border-right: solid 3px #b42e13; }
 
 .cosplayHeader, .featureHeader {
   font-family: "Russo One", sans-serif;
