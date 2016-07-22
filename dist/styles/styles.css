@@ -86,16 +86,6 @@ iframe {
   display: inline-block;
   margin: 10px; }
 
-.more {
-  bottom: 30px;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-  font-size: 1em; }
-
-.textMore {
-  margin: 5px; }
-
 /*Buttons*/
 button {
   font-family: "Russo One", sans-serif; }
