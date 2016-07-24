@@ -361,7 +361,6 @@ btn:visited{
 
 
 .newsArticle{
-   background-color:$grey13_8;
    color:$white;
    padding:10px;
    text-align:left;
@@ -391,13 +390,15 @@ btn:visited{
     border-right:$borderDarkRed;
 }
 
-.cosplayHeader, .featureHeader{
+.cosplayHeader, .featureHeader, .newsHeader{
     font-family: $fontHeaders;
     background-color:$redDark;
     font-size:1.5em;
     letter-spacing: 1px;
     padding: 5px 0 5px 0;
     width:100%;
+    color:white;
+    text-align: center;
 }
 
 .reviewFeature {
