@@ -41,6 +41,10 @@ html, body{
     font-family: $fontBody;
 }
 
+a{color:$red;}
+a:hover{color:$redDark;}
+a:active{color:$redDark;}
+
 .container-fluid{ padding:0; margin:0;}
 
 .inlineBlock{ display:inline-block;}
@@ -129,15 +133,15 @@ button{
     position:absolute;
     top:50%;
     left:50%;       
-    margin-left:-247px;
-    margin-top:80px;
+    margin-left:-293px;
+    margin-top:90px;
 }
 
 .btn{
     background-color: $red;
     color: $white;
     letter-spacing:1px;
-    font-size: 1.1em;
+    font-size: 1.6em;
     border-radius:0;
 }
 
@@ -301,6 +305,9 @@ btn:visited{
 
 
 /* News and Features */
+.spacer-xs{
+    padding:15px;
+}
 .spacer-sm{
     padding:30px;
 }
@@ -322,6 +329,16 @@ btn:visited{
     border-radius: $curvedBorder;
     margin:0;
     padding:0;
+}
+
+.newsArticle{
+    font-family: $fontBody;
+    font-size:1.15em;
+}
+
+.newsTitle{
+    font-family: $fontBody;
+    font-size: 1.4em;
 }
 
 .arrowblock {
@@ -359,11 +376,32 @@ btn:visited{
       border-color: $redDark transparent transparent transparent;
 }
 
-
 .newsArticle{
    color:$white;
    padding:10px;
    text-align:left;
+}
+
+.newsArticle > p {
+    line-height: 1.4em;
+}
+
+.newsTitle {
+    line-height:1.3em;
+    font-weight:600;
+    color:$grey2;
+}
+
+.newsImage {
+    max-width:250px;
+    float: right;
+    border: 1px solid $red;
+    border-radius: $curvedBorder;
+    margin: 0 0 15px 15px;
+}
+
+.newsAlt{
+    background-color:$grey13;
 }
 
 .features{
@@ -393,7 +431,7 @@ btn:visited{
 .cosplayHeader, .featureHeader, .newsHeader{
     font-family: $fontHeaders;
     background-color:$redDark;
-    font-size:1.5em;
+    font-size:1.6em;
     letter-spacing: 1px;
     padding: 5px 0 5px 0;
     width:100%;
