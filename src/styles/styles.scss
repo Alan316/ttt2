@@ -81,8 +81,9 @@ a:active{color:$redDark;}
 }
 
 .screen3{
-     background:url("../images/tekken3.jpg") no-repeat center center;
-     background-size:cover;  
+     /*background:url("../images/tekken3.jpg") no-repeat center center;
+     background-size:cover;*/
+     background-color:$red;
 }
 
 
@@ -133,7 +134,7 @@ button{
     position:absolute;
     top:50%;
     left:50%;       
-    margin-left:-293px;
+    margin-left:-313px;
     margin-top:90px;
 }
 
@@ -312,7 +313,7 @@ btn:visited{
     padding:30px;
 }
 .spacer-lg{
-    padding:100px;
+    padding:80px;
 }
 
 .news{
@@ -334,6 +335,7 @@ btn:visited{
 .newsArticle{
     font-family: $fontBody;
     font-size:1.15em;
+    letter-spacing: 1px;
 }
 
 .newsTitle{

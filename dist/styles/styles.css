@@ -58,8 +58,9 @@ a:active {
   /*background:url("../images/tekken_wallpaper2.jpg") no-repeat center center;*/ }
 
 .screen3 {
-  background: url("../images/tekken3.jpg") no-repeat center center;
-  background-size: cover; }
+  /*background:url("../images/tekken3.jpg") no-repeat center center;
+     background-size:cover;*/
+  background-color: #e22e13; }
 
 .centerLogo {
   position: absolute;
@@ -102,7 +103,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -293px;
+  margin-left: -313px;
   margin-top: 90px; }
 
 .btn {
@@ -248,7 +249,7 @@ btn:visited {
   padding: 30px; }
 
 .spacer-lg {
-  padding: 100px; }
+  padding: 80px; }
 
 .news {
   display: inline-block; }
@@ -266,7 +267,8 @@ btn:visited {
 
 .newsArticle {
   font-family: "Lato", sans-serif;
-  font-size: 1.15em; }
+  font-size: 1.15em;
+  letter-spacing: 1px; }
 
 .newsTitle {
   font-family: "Lato", sans-serif;
