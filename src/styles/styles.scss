@@ -34,9 +34,7 @@ $margin0: 0 0 0 0;
     margin: $margin0;
 }
 
-.center{
-    text-align: center;
-}
+.center{text-align: center;}
 
 html, body{
     background-color: $black;
@@ -92,9 +90,15 @@ a:active{color:$redDark;}
 
 .screen3{
      /*background:url("../images/red_wallpaper.jpg") no-repeat center center;*/
-     background-size:cover;
      background-color:$red;
      border-top: 20px solid $redDark;
+}
+
+.screen4{
+     /*background:url("../images/red_wallpaper.jpg") no-repeat center center;
+     background-size:cover;*/
+     background-color:$red;
+     border-bottom:30px solid $redDark;
 }
 
 
@@ -323,6 +327,11 @@ btn:visited{
 .spacer-sm{
     padding:30px;
 }
+
+.spacer-md{
+    padding:60px;
+}
+
 .spacer-lg{
     padding:80px;
 }
@@ -452,6 +461,17 @@ btn:visited{
     text-align: center;
 }
 
+.header-lg {
+    font-family: $fontHeaders;
+    background-color:$redDark;
+    font-size:3em;
+    letter-spacing: 1px;
+    padding: 5px 0 5px 0;
+    width:100%;
+    color:white;
+    text-align: center;
+}
+
 .reviewFeature {
     width:100%;
     background-color:$black;
@@ -486,7 +506,7 @@ btn:visited{
 /*End News Section*/
 
 /* Puchase Section */
-#jinpachi{
+.character{
     width:100%;
     margin-bottom:30px;
 }
@@ -496,6 +516,12 @@ btn:visited{
     display:inline-block;
     margin:10px;
 }
+
+/*Character Page*/
+.rollcall{
+    width:100%;
+}
+
 
 
 @keyframes fadein {
