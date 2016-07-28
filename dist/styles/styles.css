@@ -2,6 +2,9 @@
   padding: 0 0 0 0;
   margin: 0 0 0 0; }
 
+.center {
+  text-align: center; }
+
 html, body {
   background-color: #000000;
   /* Fix for Google fonts colored White*/
@@ -64,7 +67,8 @@ a:active {
 .screen3 {
   /*background:url("../images/red_wallpaper.jpg") no-repeat center center;*/
   background-size: cover;
-  background-color: #e22e13; }
+  background-color: #e22e13;
+  border-top: 20px solid #b42e13; }
 
 .centerLogo {
   position: absolute;
@@ -354,7 +358,7 @@ btn:visited {
   border-bottom: solid 3px #b42e13;
   border-right: solid 3px #b42e13; }
 
-.cosplayHeader, .featureHeader, .newsHeader {
+.header {
   font-family: "Russo One", sans-serif;
   background-color: #b42e13;
   font-size: 1.6em;
@@ -395,7 +399,13 @@ btn:visited {
 /*End News Section*/
 /* Puchase Section */
 #jinpachi {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 30px; }
+
+.storeLogo {
+  max-width: 150px;
+  display: inline-block;
+  margin: 10px; }
 
 @keyframes fadein {
   from {

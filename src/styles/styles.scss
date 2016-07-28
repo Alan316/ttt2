@@ -34,6 +34,10 @@ $margin0: 0 0 0 0;
     margin: $margin0;
 }
 
+.center{
+    text-align: center;
+}
+
 html, body{
     background-color: $black;
     /* Fix for Google fonts colored White*/
@@ -90,6 +94,7 @@ a:active{color:$redDark;}
      /*background:url("../images/red_wallpaper.jpg") no-repeat center center;*/
      background-size:cover;
      background-color:$red;
+     border-top: 20px solid $redDark;
 }
 
 
@@ -436,7 +441,7 @@ btn:visited{
     border-right:$borderDarkRed;
 }
 
-.cosplayHeader, .featureHeader, .newsHeader{
+.header {
     font-family: $fontHeaders;
     background-color:$redDark;
     font-size:1.6em;
@@ -483,7 +488,15 @@ btn:visited{
 /* Puchase Section */
 #jinpachi{
     width:100%;
+    margin-bottom:30px;
 }
+
+.storeLogo{
+    max-width:150px;
+    display:inline-block;
+    margin:10px;
+}
+
 
 @keyframes fadein {
             from { opacity: 0; }
