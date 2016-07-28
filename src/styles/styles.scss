@@ -17,6 +17,8 @@ $white: #ffffff;
 $curvedBorderInner: 0px 0px 12px 12px;
 $curvedBorder: 0px 0px 15px 15px;
 $borderDarkRed: solid 3px $redDark;
+$padding0: 0 0 0 0;
+$margin0: 0 0 0 0;
 
 //Style Mixins
 @mixin animation($fadeIn) {
@@ -27,6 +29,10 @@ $borderDarkRed: solid 3px $redDark;
      animation: $fadeIn;
 } 
 
+.noPadMarg{
+    padding: $padding0;
+    margin: $margin0;
+}
 
 html, body{
     background-color: $black;
@@ -318,6 +324,7 @@ btn:visited{
 
 .news{
    display:inline-block;
+   width:100%;
 }
 
 .newsScroll{
