@@ -58,8 +58,8 @@ a:active {
   /*background:url("../images/tekken_wallpaper2.jpg") no-repeat center center;*/ }
 
 .screen3 {
-  /*background:url("../images/tekken3.jpg") no-repeat center center;
-     background-size:cover;*/
+  /*background:url("../images/red_wallpaper.jpg") no-repeat center center;*/
+  background-size: cover;
   background-color: #e22e13; }
 
 .centerLogo {
