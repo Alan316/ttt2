@@ -256,8 +256,7 @@ btn:visited {
   padding: 80px; }
 
 .news {
-  display: inline-block;
-  width: 100%; }
+  display: inline-block; }
 
 .newsScroll {
   overflow: hidden;
@@ -392,6 +391,11 @@ btn:visited {
 
 .curvedBottom {
   border-radius: 0px 0px 12px 12px; }
+
+/*End News Section*/
+/* Puchase Section */
+#jinpachi {
+  width: 100%; }
 
 @keyframes fadein {
   from {
