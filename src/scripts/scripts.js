@@ -75,11 +75,13 @@ $(function() {
 $(function() {
    $( "#upBtn" ).click(function(){
     $('#scroll').scrollTop($('#scroll').scrollTop()-100);
+    /*$("#scroll").animate({ scrollTop:  $("#scroll").scrollTop() -  "100px" });*/
 }); 
 
 
  $( "#downBtn" ).click(function(){
     $('#scroll').scrollTop($('#scroll').scrollTop()+100);
+     /*$("#scroll").animate({ scrollTop:  $("#scroll").scrollTop() +  "100px" });*/
 });
- 
- });
+
+});

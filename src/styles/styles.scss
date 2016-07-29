@@ -47,6 +47,7 @@ html, body{
     height:100%;
     width:100%;
     font-family: $fontBody;
+    font-weight:400;
 }
 
 a{color:$red;}
@@ -57,13 +58,14 @@ a:active{color:$redDark;}
 
 .inlineBlock{ display:inline-block;}
 
-.noMargPad{
-    margin:0;
-    padding:0;
-}
+.noMargPad{margin:0;padding:0;}
+.padding-sm{padding:15px;}
+.padding-md{padding:30px;}
+
+.darkRed{background-color: $redDark;}
 
 .parent{
-        width:100%;
+    width:100%;
     height:100%;
     padding:0;
     margin:0;
@@ -98,7 +100,6 @@ a:active{color:$redDark;}
      /*background:url("../images/red_wallpaper.jpg") no-repeat center center;
      background-size:cover;*/
      background-color:$red;
-     border-bottom:30px solid $redDark;
 }
 
 
@@ -462,14 +463,14 @@ btn:visited{
 }
 
 .header-lg {
-    font-family: $fontHeaders;
-    background-color:$redDark;
+    @extend .header;
     font-size:3em;
-    letter-spacing: 1px;
-    padding: 5px 0 5px 0;
-    width:100%;
-    color:white;
-    text-align: center;
+}
+
+.headerBlack {
+    @extend .header;
+    background-color:$black;
+    border-radius: $curvedBorder;
 }
 
 .reviewFeature {
@@ -483,7 +484,6 @@ btn:visited{
     border-bottom:$borderDarkRed;
     border-right:$borderDarkRed;
 }
-
 
 .reviewLink, .reviewLink>a .reviewLink:visited{
     text-align:center;
@@ -503,7 +503,7 @@ btn:visited{
 .curvedBottom {
     border-radius: $curvedBorderInner;
 }
-/*End News Section*/
+/*End News `on*/
 
 /* Puchase Section */
 .character{
@@ -522,8 +522,62 @@ btn:visited{
     width:100%;
 }
 
+#spotlight{
+    @include animation(fadein 3s);
+    width:90%;
+    height:auto;
+}
 
+.bio{
+    font-size: 1.3;
+    font-weight:600;
+    color:black;
+    line-height: 1.1em;
+    font-weight:700;
+}
 
+.bio > p{
+    line-height: 1.4em;
+}
+
+.bio > iframe{
+    text-align:center;
+    max-width:100%;
+    
+}
+
+.characterImages{
+    width:100%;
+    border-radius:$curvedBorder;
+    margin-top:20px;
+}
+
+.category{
+    font-weight:900;
+}
+
+.rightArrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 32px 16px;
+    border-color: transparent transparent transparent $white ;
+    display:inline-block;
+    cursor:pointer;
+    margin:20px 12px 0px 12px;
+}
+
+.leftArrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px  32px 16px ;
+    border-color:  transparent $white  transparent transparent  ;
+    display:inline-block;
+    cursor:pointer;
+    margin:20px 14px 0px 12px;
+    
+}
 @keyframes fadein {
             from { opacity: 0; }
             to   { opacity: 1; }
