@@ -54,6 +54,8 @@ a{color:$red;}
 a:hover{color:$redDark;}
 a:active{color:$redDark;}
 
+.redBg{background-color:$red;}
+
 .container-fluid{ padding:0; margin:0;}
 
 .inlineBlock{ display:inline-block;}
@@ -272,7 +274,7 @@ btn:visited{
 .navbar-header
 {
     float: none;
-    background-color: rgba(40,40,40,.75);
+    background-color: rgba(40,40,40,.85);
     padding:10px 30px 10px 30px;
 }
 
@@ -565,6 +567,7 @@ btn:visited{
     display:inline-block;
     cursor:pointer;
     margin:20px 12px 0px 12px;
+    float:right;
 }
 
 .leftArrow {
@@ -576,6 +579,7 @@ btn:visited{
     display:inline-block;
     cursor:pointer;
     margin:20px 14px 0px 12px;
+    float:left;
     
 }
 @keyframes fadein {
