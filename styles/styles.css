@@ -27,6 +27,9 @@ a:hover {
 a:active {
   color: #b42e13; }
 
+.redBg {
+  background-color: #e22e13; }
+
 .container-fluid {
   padding: 0;
   margin: 0; }
@@ -227,7 +230,7 @@ btn:visited {
 
 .navbar-header {
   float: none;
-  background-color: rgba(40, 40, 40, 0.75);
+  background-color: rgba(40, 40, 40, 0.85);
   padding: 10px 30px 10px 30px; }
 
 .navbar-toggle {
@@ -474,7 +477,8 @@ btn:visited {
   border-color: transparent transparent transparent #ffffff;
   display: inline-block;
   cursor: pointer;
-  margin: 20px 12px 0px 12px; }
+  margin: 20px 12px 0px 12px;
+  float: right; }
 
 .leftArrow {
   width: 0;
@@ -484,7 +488,8 @@ btn:visited {
   border-color: transparent #ffffff transparent transparent;
   display: inline-block;
   cursor: pointer;
-  margin: 20px 14px 0px 12px; }
+  margin: 20px 14px 0px 12px;
+  float: left; }
 
 @keyframes fadein {
   from {
