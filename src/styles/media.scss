@@ -10,6 +10,11 @@
     padding:10px;
 }
 
+@media (max-width: 800px){
+.charSecondImage{
+    display:none;
+}
+}
 
 @media (max-width: 500px){
 .systemLogo, .ps3{
