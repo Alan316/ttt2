@@ -10,14 +10,14 @@
     padding:10px;
 }
 
-@media (max-width: 800px){
-.charSecondImage{
+@media (max-width: 840px){
+.systemLogo, .ps3{
     display:none;
 }
 }
 
 @media (max-width: 500px){
-.systemLogo, .ps3{
+.systemLogo{
     display:none;
   }
 .navbarLogo{
@@ -46,5 +46,8 @@
 }
 .navbar-fixed-top{
     position:relative;
+}
+.charSecondImage{
+    display:none;
 }
 }

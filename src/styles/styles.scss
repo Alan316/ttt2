@@ -66,6 +66,8 @@ a:active{color:$redDark;}
 
 .darkRed{background-color: $redDark;}
 
+.show{display:inline-block;}
+
 .parent{
     width:100%;
     height:100%;
@@ -548,6 +550,7 @@ btn:visited{
     
 }
 
+
 .characterImages{
     width:100%;
     border-radius:$curvedBorder;
@@ -582,6 +585,11 @@ btn:visited{
     float:left;
     
 }
+
+.charSecondImage{
+    display:inline-block;
+}
+
 @keyframes fadein {
             from { opacity: 0; }
             to   { opacity: 1; }
