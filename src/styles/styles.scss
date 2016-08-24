@@ -471,6 +471,12 @@ btn:visited{
     font-size:3em;
 }
 
+.headerDK-lg {
+    @extend .header;
+    background:#333333;
+    font-size:3em;
+}
+
 .headerBlack {
     @extend .header;
     background-color:$black;
