@@ -116,8 +116,9 @@ a:active{color:$redDark;}
     left:50%;
     max-width:400px;
     max-height:295px;
-    margin-top:-150px;
-    margin-left: -200px;
+    /*margin-top:-150px;
+    margin-left: -200px;*/
+    transform: translate(-50%, -50%);
     -moz-filter: drop-shadow(5px 5px 9px $white);
     -ms-filter: drop-shadow(5px 5px 9px $white);
     -webkit-filter: drop-shadow(5px 5px 9px $white);
